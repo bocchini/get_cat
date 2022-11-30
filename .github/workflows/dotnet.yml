@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore GetCat/
     - name: Build
-      run: dotnet build /GetCat/ --no-restore
+      run: dotnet build GetCat/ --no-restore
     - name: Test
-      run: dotnet test /GetCat/ --no-build --verbosity normal
+      run: dotnet test GetCat/ --no-build --verbosity normal
