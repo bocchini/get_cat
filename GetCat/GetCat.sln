@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetCat.Domain", "GetCat.Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetCat.Application", "GetCat.Application\GetCat.Application.csproj", "{02F79166-B52F-45F2-9B12-1B18D1F3CD68}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{27BBB2E0-D66C-45C6-BBBF-A3D2135AA868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetCat.Tests", "GetCat.Tests\GetCat.Tests.csproj", "{10A3E210-EE28-4DBB-B9DD-D9E5238A2DA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{02F79166-B52F-45F2-9B12-1B18D1F3CD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02F79166-B52F-45F2-9B12-1B18D1F3CD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02F79166-B52F-45F2-9B12-1B18D1F3CD68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10A3E210-EE28-4DBB-B9DD-D9E5238A2DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A3E210-EE28-4DBB-B9DD-D9E5238A2DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A3E210-EE28-4DBB-B9DD-D9E5238A2DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A3E210-EE28-4DBB-B9DD-D9E5238A2DA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10A3E210-EE28-4DBB-B9DD-D9E5238A2DA1} = {27BBB2E0-D66C-45C6-BBBF-A3D2135AA868}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E253F89-4C2D-4C8C-A705-3BFF50E4BC0E}

@@ -7,7 +7,7 @@ namespace GetCat.Application.Services
 {
     public class CatService : ICatService
     {
-        private readonly string url = "https://api.thecatapi.com/v1/images/";
+        private readonly string url = "https://api.thecatapi.com/v1/images";
         private readonly IHttpClientWrapper _httpClientWrapper;
 
         public CatService(IHttpClientWrapper httpClientWrapper)
@@ -16,7 +16,7 @@ namespace GetCat.Application.Services
         }
         public async Task<IList<CatsDto>> Get(int limit, int page)
         {
-            var response = await _httpClientWrapper.GetAsync(url + $"search?limit={limit}0&page={page}");
+            var response = await _httpClientWrapper.GetAsync($"{url}/search?limit={limit}0&page={page}");
 
             if(response.IsSuccessStatusCode)
             {

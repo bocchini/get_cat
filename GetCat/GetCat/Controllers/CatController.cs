@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GetCat.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class CatController : ControllerBase
     {
@@ -14,7 +14,7 @@ namespace GetCat.Controllers
             _catService = catService;
         }
 
-        [HttpGet("{page}")]
+        [HttpPost()]
         public async Task<IActionResult> Get(int limit, int page)
         {
             var catResponse = await _catService.Get(limit, page);
