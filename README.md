@@ -38,7 +38,7 @@ Instruções e utilizações estçao no link abaixo.
 | ------ | ------ |
 | Json .NET | [Documentation][PlDb] |
 | Xunit .Net | [Documentation][PlGh] |
-| NSubstitue | [NSubstitute/README.md][PlOd] |
+| NSubstitue | [NSubstitute/README.md][PlGd] |
 | Fluent Assertions | [Documentation][PlMe] |
 
 ## Desenvolvimento
